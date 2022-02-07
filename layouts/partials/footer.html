@@ -300,7 +300,8 @@
 
 {{ if .Site.GoogleAnalytics }}
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	var _gaId = '{{ .Site.Params.googleAnalytics }}';
+	// var _gaId = '{{ .Site.Params.googleAnalytics }}';
+	var _gaId = "{{ .Params.googleAnalytics }}"
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=" + _gaId;></script>
 	<script>
